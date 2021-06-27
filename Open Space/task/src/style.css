@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.space {
+    height: 100vh;
+    position: relative;
+    left: 100px;
+    bottom: 0;
+    background-image: url("images/space.png");
+    overflow: hidden;
+}
+
+.planet-area {
+    position: relative;
+    bottom: 0;
+}
+
+img.rocket {
+    position: absolute;
+    bottom: 300px;
+    left: 400px;
+    transform: rotate(30deg);
+}
+
+/*Control panel*/
+.control-panel{
+    position: absolute;
+    right:10vw;
+    top: 20vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background:
+            linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+            linear-gradient(63deg, transparent 74%, #999 78%),
+            linear-gradient(62deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+            #444;
+    background-size: 16px 48px;
+    padding: 20px;
+}
+
+.control-panel__inner {
+    background-size:16px 16px;
+    background-clip: padding-box;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+    height: calc(100% - 20px);
+    text-align: center;
+}
+
+.password {
+    border: gold solid 3px;
+    height: 35px;
+    width: 180px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.button-ok {
+    color: darkgray;
+    border: none;
+    border-radius: 8px;
+    height: 35px;
+    width: 65px;
+    margin-top: 20px;
+    background-color: gold;
+}
+
+
+.button-launch {
+    color: darkgray;
+    border: none;
+    border-radius: 50%;
+    height: 45px;
+    width: 75px;
+    margin-top: 20px;
+    background-color: red;
+}
+
+.check-buttons{
+    display: flex;
+}
+
+.levers{
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type=range]{
+    transform: rotate(270deg);
+    width: 50px;
+}
